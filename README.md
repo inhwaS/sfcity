@@ -2,7 +2,7 @@
 
 ### Backend
 1. From the directory root, change the folder by using `cd backend`
-2. Please update `.env` file with given keys
+2. Create `.env` file with given keys
 3. Run the command `python manage.py runserver`
 
 ### Frontend
