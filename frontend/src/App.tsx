@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import useGoogleAuthToken from "./hooks/useGoogleAuthToken";
 import useGoogleAuthLink from "./hooks/useGoogleAuthLink";
 import useProfile from "./hooks/useProfile";
+import AnotherPage from './pages/AnotherPage';
+
 
 function App() {
   const { data: profile, refetch: fetchProfile } = useProfile();
@@ -44,7 +46,10 @@ function App() {
   return (
     <div className="App">
       {profile ? (
-        <h1>Hello {profile.firstName}!</h1>
+        <>
+          <h1>Hello {profile.firstName}!</h1>
+          <AnotherPage />
+        </>
       ) : (
         <button onClick={handleGoogleLogin}>Login with Google</button>
       )}

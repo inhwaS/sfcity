@@ -1,0 +1,44 @@
+.scheduler {
+    display: flex;
+  }
+  
+  .time-column {
+    flex: 0 0 50px; /* Fixed width for the time column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .hour {
+    height: 40px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .days-grid {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .day-column {
+    flex: 1;
+    margin: 5px;
+  }
+  
+  .time-slot {
+    border: 1px solid #ddd;
+    height: 40px; /* Match the height of .hour */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .time-slot:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Additional styling... */
+  
