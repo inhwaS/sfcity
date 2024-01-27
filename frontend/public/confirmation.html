@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmation</title>
+</head>
+<body>
+  <h1>Do you want to book a session?</h1>
+  <button id="yesButton">Yes</button>
+  <button id="noButton">No</button>
+
+  <script>
+    document.getElementById('yesButton').addEventListener('click', () => {
+      window.opener.postMessage('yes', '*');
+      window.close();
+    });
+
+    document.getElementById('noButton').addEventListener('click', () => {
+      window.close();
+    });
+  </script>
+</body>
+</html>
